@@ -42,7 +42,6 @@ Each decision moment yields exactly one action and exactly one Evidence Ledger r
 
 ~~~mermaid
 stateDiagram-v2
-    direction LR
     [*] --> Observed: message, behaviour or silence over 24 h
     Observed --> Sensed: z_t as-of t
     Sensed --> Matched: Agent Persona, context c
