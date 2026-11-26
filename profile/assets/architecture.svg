@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="1000" height="650" role="img" aria-label="LittleA layered model: Sensing, Persona Layer, Decision Layer, Output core, OmniHub, Evidence Ledger and Judge">
+<title>LittleA layered model</title>
+<defs>
+<style>
+svg{--paper:#fbfbf8;--sheet:#ffffff;--paper2:#f0f1ec;--ink:#15171a;--ink2:#50555b;--ink3:#868b91;--rule:#d9dbd4;--rule2:#b3b7ae;--acc:#1d4f99;--accs:#e6edf8;--now:#c4581b;--nows:#fbeee5;--ok:#1d7a52}
+@media (prefers-color-scheme:dark){svg{--paper:#161b22;--sheet:#1c222b;--paper2:#222932;--ink:#eceee9;--ink2:#a9aeb3;--ink3:#7d8288;--rule:#30363d;--rule2:#4c5157;--acc:#8fb4ef;--accs:#1d2b45;--now:#ec8a4f;--nows:#33231a;--ok:#62c296}}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"PingFang SC","Noto Sans CJK SC",sans-serif}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Noto Serif CJK SC",serif}
+.mono{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.card{fill:var(--paper);stroke:var(--rule)}
+.b{fill:var(--sheet);stroke:var(--now);stroke-width:1.7}
+.lens{fill:var(--nows);stroke:var(--now);stroke-width:1.7}
+.int{fill:var(--sheet);stroke:var(--rule2);stroke-width:1.3;stroke-dasharray:5 4}
+.sub{fill:var(--paper);stroke:var(--rule2);stroke-width:1}
+.exp{fill:none;stroke:var(--rule2);stroke-width:1.2;stroke-dasharray:4 4}
+.judge{fill:var(--accs);stroke:var(--acc);stroke-width:1.7}
+.h{font-size:15px;font-weight:700;fill:var(--ink)}
+.h2{font-size:13.5px;font-weight:700;fill:var(--ink)}
+.t{font-size:12.5px;fill:var(--ink2)}
+.tk{font-size:12.5px;fill:var(--ink)}
+.f{font-size:10.5px;letter-spacing:.08em;fill:var(--now)}
+.fa{font-size:10.5px;letter-spacing:.08em;fill:var(--acc)}
+.fi{font-size:10.5px;letter-spacing:.08em;fill:var(--ink3)}
+.eb{font-size:11px;letter-spacing:.16em;fill:var(--ink2)}
+.ed{fill:none;stroke:var(--now);stroke-width:1.7}
+.eda{fill:none;stroke:var(--acc);stroke-width:1.5}
+.edg{fill:none;stroke:var(--ink3);stroke-width:1.3;stroke-dasharray:4 3}
+.flow{stroke-dasharray:6 5;animation:flow 1.1s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-11}}
+@media (prefers-reduced-motion:reduce){.flow{animation:none}}
+.mk{fill:var(--now)} .mka{fill:var(--acc)} .mkg{fill:var(--ink3)}
+</style>
+<marker id="an" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="mk"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="mka"/></marker>
+<marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="mkg"/></marker>
+</defs>
+<rect class="card" x="0.5" y="0.5" width="999" height="649" rx="16"/>
+<text x="28" y="38" class="mono eb">ARCHITECTURE · ONE DECISION MOMENT</text>
+<text x="28" y="66" class="serif" font-size="20" font-weight="700" fill="var(--ink)">The Persona Layer is the outermost lens. The Judge stays outside it.</text>
+
+<!-- Sensing -->
+<rect class="b" x="28" y="112" width="150" height="270" rx="10"/>
+<text x="42" y="138" class="sans h">Sensing</text>
+<text x="42" y="166" class="sans t">profile · posts</text>
+<text x="42" y="186" class="sans t">likes · comments</text>
+<text x="42" y="206" class="sans t">DMs</text>
+<text x="42" y="226" class="sans t">reply latency</text>
+<text x="42" y="246" class="sans t">silence</text>
+<text x="42" y="266" class="sans t">left on read</text>
+<text x="42" y="298" class="sans tk">→ state z<tspan font-size="9.5" dy="3">t</tspan></text>
+<text x="42" y="366" class="mono f">BUILD · O2</text>
+<path class="ed flow" d="M178 250 H192" marker-end="url(#an)"/>
+
+<!-- Persona lens -->
+<rect class="lens" x="194" y="96" width="500" height="302" rx="14"/>
+<text x="210" y="122" class="sans h">Persona Layer · lens (O2)</text>
+<text x="210" y="142" class="sans t">User Persona → Agent Persona → context c · changes actions, not weights</text>
+
+<!-- Decision -->
+<rect class="b" x="210" y="160" width="284" height="222" rx="10"/>
+<text x="224" y="184" class="sans h">Decision Layer (O3)</text>
+<rect class="sub" x="222" y="198" width="128" height="74" rx="7"/>
+<text x="234" y="219" class="sans h2">Fast path</text>
+<text x="234" y="238" class="sans t">Student &lt; 20B</text>
+<text x="234" y="257" class="sans t">p95 ≤ 100 ms</text>
+<rect class="sub" x="358" y="198" width="124" height="74" rx="7"/>
+<text x="370" y="219" class="sans h2">Slow path</text>
+<text x="370" y="238" class="sans t">Teacher +</text>
+<text x="370" y="257" class="sans t">frontier reasoning</text>
+<path class="edg" d="M350 235 H356" marker-end="url(#ag)"/>
+<text x="224" y="296" class="sans tk">six actions A–F · calibrated p(a)</text>
+<text x="224" y="316" class="sans t">max p ≥ τ → fast · else F defer → slow</text>
+<text x="224" y="336" class="sans t">outputs actions only, never text</text>
+<text x="224" y="366" class="mono f">BUILD · O3</text>
+<path class="ed flow" d="M494 270 H506" marker-end="url(#an)"/>
+
+<!-- Output core -->
+<rect class="int" x="508" y="160" width="170" height="222" rx="10"/>
+<text x="522" y="184" class="sans h">Output core</text>
+<text x="522" y="212" class="sans t">Frontier LLM</text>
+<text x="522" y="232" class="sans t">writes the reply</text>
+<text x="522" y="252" class="sans t">from action + c</text>
+<text x="522" y="272" class="sans t">not trained here</text>
+<text x="522" y="292" class="sans t">providers swappable</text>
+<text x="522" y="366" class="mono fi">INTEGRATE</text>
+<path class="ed flow" d="M678 270 H708" marker-end="url(#an)"/>
+
+<!-- OmniHub -->
+<rect class="b" x="710" y="112" width="262" height="270" rx="10"/>
+<text x="724" y="138" class="sans h">OmniHub (WS-X)</text>
+<text x="724" y="166" class="sans t">official messaging APIs</text>
+<text x="724" y="186" class="sans t">GUI agents on real phones</text>
+<text x="724" y="206" class="sans t">cloud sandbox · device fleet</text>
+<text x="724" y="226" class="sans t">Action DSL · verifier</text>
+<rect class="sub" x="724" y="240" width="234" height="58" rx="7"/>
+<text x="736" y="262" class="sans h2">compliance gate</text>
+<text x="736" y="283" class="sans t">AI disclosure · stop requests</text>
+<text x="724" y="324" class="mono tk" font-size="12">Intent → Attempt → Receipt</text>
+<text x="724" y="366" class="mono f">BUILD · SHARED PLATFORM</text>
+
+<!-- Evidence + Judge -->
+<path class="ed flow" d="M880 382 V424" marker-end="url(#an)"/>
+<text x="872" y="408" text-anchor="end" class="mono fi">receipts · outcomes</text>
+<rect class="judge" x="28" y="426" width="944" height="76" rx="10"/>
+<text x="44" y="452" class="sans h">Evidence Ledger · Judge (O1)</text>
+<text x="44" y="474" class="sans tk">per decision moment: p(a) · π<tspan font-size="9.5" dy="3">b</tspan><tspan dy="-3"> · as-of state hash · component versions · receipt · T1–T4 status</tspan></text>
+<text x="44" y="493" class="sans t">The Judge scores only on a sealed holdout and matured outcomes. It is never trained and never takes a persona.</text>
+<path class="eda" d="M300 426 V384" marker-end="url(#aa)" stroke-dasharray="4 3"/>
+<text x="308" y="412" class="mono fa">GATES RELEASES</text>
+
+<!-- Research directions -->
+<text x="28" y="534" class="mono eb">RESEARCH DIRECTIONS · NOT IN PHASE 1</text>
+<rect class="exp" x="28" y="546" width="180.8" height="58" rx="8"/>
+<text x="40" y="569" class="sans h2">Native Sensing–Action</text>
+<text x="40" y="590" class="sans t">pretrain on behaviour</text>
+<rect class="exp" x="218.8" y="546" width="180.8" height="58" rx="8"/>
+<text x="230.8" y="569" class="sans h2">Persona Adapter · R2</text>
+<text x="230.8" y="590" class="sans t">LoRA / last layers</text>
+<rect class="exp" x="409.6" y="546" width="180.8" height="58" rx="8"/>
+<text x="421.6" y="569" class="sans h2">Self-evolution</text>
+<text x="421.6" y="590" class="sans t">accept by randomized T4</text>
+<rect class="exp" x="600.4" y="546" width="180.8" height="58" rx="8"/>
+<text x="612.4" y="569" class="sans h2">Bonding</text>
+<text x="612.4" y="590" class="sans t">months-to-years strategy</text>
+<rect class="exp" x="791.2" y="546" width="180.8" height="58" rx="8"/>
+<text x="803.2" y="569" class="sans h2">Agent cloud</text>
+<text x="803.2" y="590" class="sans t">many agents, each evolving</text>
+
+<!-- legend -->
+<g class="sans" font-size="12" fill="var(--ink2)">
+<rect x="28" y="621" width="22" height="12" rx="3" class="b"/><text x="58" y="631">Build · LittleA</text>
+<rect x="168" y="621" width="22" height="12" rx="3" class="int"/><text x="198" y="631">Integrate · third party</text>
+<rect x="360" y="621" width="22" height="12" rx="3" class="exp"/><text x="390" y="631">Explore</text>
+<rect x="470" y="621" width="22" height="12" rx="3" class="judge"/><text x="500" y="631">Evaluate · never trained</text>
+</g>
+</svg>

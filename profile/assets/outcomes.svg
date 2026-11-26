@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400" role="img" aria-label="Outcome maturity: T1 accept, T2 pay, T3 fulfil, T4 retain; matured, reversed and censored cases">
+<title>Outcome maturity T1 to T4</title>
+<defs>
+<style>
+svg{--paper:#fbfbf8;--sheet:#ffffff;--paper2:#eeefea;--ink:#15171a;--ink2:#50555b;--ink3:#868b91;--rule:#d9dbd4;--rule2:#b3b7ae;--acc:#1d4f99;--accs:#e6edf8;--now:#c4581b;--ok:#1d7a52;--bad:#a83636}
+@media (prefers-color-scheme:dark){svg{--paper:#161b22;--sheet:#1c222b;--paper2:#262d36;--ink:#eceee9;--ink2:#a9aeb3;--ink3:#7d8288;--rule:#30363d;--rule2:#4c5157;--acc:#8fb4ef;--accs:#1d2b45;--now:#ec8a4f;--ok:#62c296;--bad:#e07a7a}}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"PingFang SC","Noto Sans CJK SC",sans-serif}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Noto Serif CJK SC",serif}
+.mono{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.card{fill:var(--paper);stroke:var(--rule)}
+.box{fill:var(--sheet);stroke:var(--rule);stroke-width:1}
+.top{fill:var(--acc)}
+.k{font-size:12px;fill:var(--acc);font-weight:700}
+.v{font-size:15px;font-weight:700;fill:var(--ink)}
+.t{font-size:12px;fill:var(--ink2)}
+.eb{font-size:11px;letter-spacing:.16em;fill:var(--ink2)}
+.who{font-size:13px;font-weight:700;fill:var(--ink)}
+.win{fill:var(--paper2)}
+.line{stroke:var(--ink3);stroke-width:1.4}
+.d{fill:var(--acc)}
+.st{font-size:11.5px}
+.sweep path{animation:dash 1.2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-9}}
+@media (prefers-reduced-motion:reduce){.sweep path{animation:none}}
+</style>
+</defs>
+<rect class="card" x="0.5" y="0.5" width="999" height="399" rx="16"/>
+<text x="28" y="38" class="mono eb">OUTCOMES · WHAT COUNTS AS A RESULT</text>
+<text x="28" y="66" class="serif" font-size="20" font-weight="700" fill="var(--ink)">Trust is measured by matured outcomes, not by replies.</text>
+
+<g class="sans">
+<rect class="box" x="28" y="84" width="227" height="92" rx="8"/><rect class="top" x="28" y="84" width="227" height="3" rx="1.5"/>
+<text x="42" y="108" class="mono k">T1</text><text x="70" y="108" class="v">Accept</text>
+<text x="42" y="132" class="t">within 72 h: clicks the product or</text>
+<text x="42" y="150" class="t">pay link, says they will buy, or</text>
+<text x="42" y="168" class="t">confirms a concrete offer</text>
+
+<rect class="box" x="267" y="84" width="227" height="92" rx="8"/><rect class="top" x="267" y="84" width="227" height="3" rx="1.5"/>
+<text x="281" y="108" class="mono k">T2</text><text x="309" y="108" class="v">Pay</text>
+<text x="281" y="132" class="t">an order linked to the session</text>
+<text x="281" y="150" class="t">is paid; "a deal" always means T2</text>
+
+<rect class="box" x="506" y="84" width="227" height="92" rx="8"/><rect class="top" x="506" y="84" width="227" height="3" rx="1.5"/>
+<text x="520" y="108" class="mono k">T3</text><text x="548" y="108" class="v">Fulfil</text>
+<text x="520" y="132" class="t">delivered, or the digital good</text>
+<text x="520" y="150" class="t">is handed over</text>
+
+<rect class="box" x="745" y="84" width="227" height="92" rx="8"/><rect class="top" x="745" y="84" width="227" height="3" rx="1.5"/>
+<text x="759" y="108" class="mono k">T4</text><text x="787" y="108" class="v">Retain</text>
+<text x="759" y="132" class="t">the refund window closes with</text>
+<text x="759" y="150" class="t">no refund and no cancellation;</text>
+<text x="759" y="168" class="t" style="fill:var(--now)">this is the reward</text>
+</g>
+
+<text x="28" y="210" class="mono eb">THREE USERS, THREE ENDINGS · REFUND WINDOW (SHADED) STARTS AT T3</text>
+
+<!-- lane A matured -->
+<text x="28" y="246" class="sans who">User A</text>
+<rect class="win" x="380" y="234" width="340" height="18" rx="4"/>
+<line class="line" x1="160" y1="243" x2="720" y2="243"/>
+<circle cx="160" cy="243" r="4" fill="var(--ink3)"/>
+<circle class="d" cx="210" cy="243" r="5"/><text x="210" y="228" text-anchor="middle" class="mono t" font-size="10.5">T1</text>
+<circle class="d" cx="270" cy="243" r="5"/><text x="270" y="228" text-anchor="middle" class="mono t" font-size="10.5">T2</text>
+<circle class="d" cx="380" cy="243" r="5"/><text x="380" y="228" text-anchor="middle" class="mono t" font-size="10.5">T3</text>
+<circle cx="720" cy="243" r="7" fill="var(--ok)"/><text x="720" y="228" text-anchor="middle" class="mono t" font-size="10.5">T4</text>
+<text x="160" y="272" class="sans st" fill="var(--ok)">matured · window closed, still kept · T4 = 1</text>
+
+<!-- lane B reversed -->
+<text x="28" y="308" class="sans who">User B</text>
+<rect class="win" x="440" y="296" width="340" height="18" rx="4"/>
+<line class="line" x1="230" y1="305" x2="580" y2="305"/>
+<circle cx="230" cy="305" r="4" fill="var(--ink3)"/>
+<circle class="d" cx="280" cy="305" r="5"/>
+<circle class="d" cx="340" cy="305" r="5"/>
+<circle class="d" cx="440" cy="305" r="5"/>
+<path d="M574 299 l12 12 M586 299 l-12 12" stroke="var(--bad)" stroke-width="2.2"/>
+<text x="580" y="290" text-anchor="middle" class="mono t" font-size="10.5" fill="var(--bad)" style="fill:var(--bad)">refund</text>
+<text x="230" y="334" class="sans st" fill="var(--bad)">reversed · refunded inside the window · T4 = 0, T1–T3 keep their values</text>
+
+<!-- lane C censored -->
+<text x="28" y="370" class="sans who">User C</text>
+<rect class="win" x="660" y="358" width="200" height="18" rx="4"/>
+<rect x="860" y="358" width="110" height="18" rx="4" fill="none" stroke="var(--rule2)" stroke-dasharray="3 3"/>
+<line class="line" x1="480" y1="367" x2="860" y2="367"/>
+<circle cx="480" cy="367" r="4" fill="var(--ink3)"/>
+<circle class="d" cx="530" cy="367" r="5"/>
+<circle class="d" cx="590" cy="367" r="5"/>
+<circle class="d" cx="660" cy="367" r="5"/>
+<text x="480" y="392" class="sans st" fill="var(--now)">censored · window still open at cutoff · neither success nor failure</text>
+
+<!-- observation cutoff -->
+<g class="sweep">
+<path d="M860 222 V382" stroke="var(--now)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="868" y="300" class="mono t" font-size="10.5" style="fill:var(--now)">observation</text><text x="868" y="314" class="mono t" font-size="10.5" style="fill:var(--now)">cutoff</text>
+</g>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480" role="img" aria-label="LittleA Agentic RL Harness. To be the friend you trust. To sell the stuff you need.">
+<title>LittleA · Agentic RL Harness</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e1116"/><stop offset="0.55" stop-color="#121821"/><stop offset="1" stop-color="#171b24"/></linearGradient>
+<radialGradient id="glow" cx="0.75" cy="0.5" r="0.45"><stop offset="0" stop-color="#ec8a4f" stop-opacity="0.16"/><stop offset="1" stop-color="#ec8a4f" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" cx="0.12" cy="0.1" r="0.5"><stop offset="0" stop-color="#8fb4ef" stop-opacity="0.10"/><stop offset="1" stop-color="#8fb4ef" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.05"/></pattern>
+<path id="orbit" d="M960 110 A130 130 0 1 1 960 370 A130 130 0 1 1 960 110"/>
+<style>
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"PingFang SC","Noto Sans CJK SC",sans-serif}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Noto Serif CJK SC",serif}
+.mono{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.lab{font-size:15px;font-weight:700;fill:#eceee9}
+.sub{font-size:11px;fill:#8d939a;letter-spacing:.02em}
+.num{font-size:11px;fill:#ec8a4f;letter-spacing:.06em}
+.spin{transform-origin:960px 240px;animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+</style>
+</defs>
+<rect width="1280" height="480" rx="22" fill="url(#bg)"/>
+<rect width="1280" height="480" rx="22" fill="url(#dots)"/>
+<rect width="1280" height="480" rx="22" fill="url(#glow)"/>
+<rect width="1280" height="480" rx="22" fill="url(#glow2)"/>
+<rect x="0.5" y="0.5" width="1279" height="479" rx="21.5" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+<!-- left: identity -->
+<text x="64" y="86" class="mono" font-size="12.5" fill="#ec8a4f" letter-spacing="2.6">LITTLEA · AGENTIC RL HARNESS</text>
+<text x="60" y="178" class="serif" font-size="92" font-weight="700" fill="#eceee9" letter-spacing="-1">Little<tspan fill="#ec8a4f">A</tspan></text>
+<text x="64" y="232" class="serif" font-size="26" fill="#eceee9">To be the friend you trust.</text>
+<text x="64" y="268" class="serif" font-size="26" fill="#eceee9">To sell the stuff you need.</text>
+<text x="64" y="318" class="sans" font-size="15.5" fill="#a9aeb3">A self-evolving AI species that coexists with human beings</text>
+<text x="64" y="342" class="sans" font-size="15.5" fill="#a9aeb3">and builds a zero-friction matching network.</text>
+<g class="mono" font-size="11.5" fill="#cfd3d6">
+<rect x="64" y="384" width="132" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.14"/><text x="130" y="402" text-anchor="middle">real users</text>
+<rect x="206" y="384" width="152" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.14"/><text x="282" y="402" text-anchor="middle">matured outcome</text>
+<rect x="368" y="384" width="150" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.14"/><text x="443" y="402" text-anchor="middle">evidence ledger</text>
+<rect x="528" y="384" width="104" height="28" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.14"/><text x="580" y="402" text-anchor="middle">disclosed</text>
+</g>
+
+<!-- right: RSI loop -->
+<circle cx="960" cy="240" r="186" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+<g class="spin"><circle cx="960" cy="240" r="160" fill="none" stroke="#8fb4ef" stroke-opacity="0.22" stroke-dasharray="2 7"/></g>
+<circle cx="960" cy="240" r="130" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.4"/>
+<circle cx="960" cy="240" r="130" fill="none" stroke="#ec8a4f" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="60 757" opacity="0.9" transform="rotate(-90 960 240)">
+<animate attributeName="stroke-dashoffset" from="60" to="-757" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="960" cy="240" r="58" fill="#ec8a4f" fill-opacity="0.08" stroke="#ec8a4f" stroke-opacity="0.5"/>
+<circle cx="960" cy="240" r="58" fill="none" stroke="#ec8a4f" stroke-opacity="0.5">
+<animate attributeName="r" values="58;76;58" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="stroke-opacity" values="0.5;0;0.5" dur="6s" repeatCount="indefinite"/>
+</circle>
+<text x="960" y="244" text-anchor="middle" class="serif" font-size="30" font-weight="700" fill="#eceee9">trust</text>
+<text x="960" y="264" text-anchor="middle" class="mono" font-size="10" fill="#ec8a4f" letter-spacing="1.2">T1 → T4</text>
+
+<!-- nodes: clockwise from top, 60° apart, r=130 -->
+<g>
+<circle cx="960" cy="110" r="9" fill="#171b24" stroke="#8fb4ef" stroke-width="2"/>
+<circle cx="960" cy="110" r="9" fill="#ec8a4f" opacity="0"><animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.06;0.3;1" dur="6s" begin="0s" repeatCount="indefinite"/></circle>
+<text x="960" y="64" text-anchor="middle" class="mono num">01</text>
+<text x="960" y="82" text-anchor="middle" class="sans lab">Executing</text>
+<text x="960" y="96" text-anchor="middle" class="mono sub">OmniHub</text>
+</g>
+<g>
+<circle cx="1072.6" cy="175" r="9" fill="#171b24" stroke="#8fb4ef" stroke-width="2"/>
+<circle cx="1072.6" cy="175" r="9" fill="#ec8a4f" opacity="0"><animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.06;0.3;1" dur="6s" begin="1s" repeatCount="indefinite"/></circle>
+<text x="1090" y="160" class="mono num">02</text>
+<text x="1090" y="178" class="sans lab">Sensing</text>
+<text x="1090" y="193" class="mono sub">Sensing–Action Model</text>
+</g>
+<g>
+<circle cx="1072.6" cy="305" r="9" fill="#171b24" stroke="#8fb4ef" stroke-width="2"/>
+<circle cx="1072.6" cy="305" r="9" fill="#ec8a4f" opacity="0"><animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.06;0.3;1" dur="6s" begin="2s" repeatCount="indefinite"/></circle>
+<text x="1090" y="296" class="mono num">03</text>
+<text x="1090" y="314" class="sans lab">Matching</text>
+<text x="1090" y="329" class="mono sub">Persona Layer</text>
+</g>
+<g>
+<circle cx="960" cy="370" r="9" fill="#171b24" stroke="#8fb4ef" stroke-width="2"/>
+<circle cx="960" cy="370" r="9" fill="#ec8a4f" opacity="0"><animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.06;0.3;1" dur="6s" begin="3s" repeatCount="indefinite"/></circle>
+<text x="960" y="400" text-anchor="middle" class="mono num">04</text>
+<text x="960" y="418" text-anchor="middle" class="sans lab">Bonding</text>
+<text x="960" y="433" text-anchor="middle" class="mono sub">Long–Short Strategy</text>
+</g>
+<g>
+<circle cx="847.4" cy="305" r="9" fill="#171b24" stroke="#8fb4ef" stroke-width="2"/>
+<circle cx="847.4" cy="305" r="9" fill="#ec8a4f" opacity="0"><animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.06;0.3;1" dur="6s" begin="4s" repeatCount="indefinite"/></circle>
+<text x="830" y="296" text-anchor="end" class="mono num">05</text>
+<text x="830" y="314" text-anchor="end" class="sans lab">Evolving</text>
+<text x="830" y="329" text-anchor="end" class="mono sub">RSI core · lineage</text>
+</g>
+<g>
+<circle cx="847.4" cy="175" r="9" fill="#171b24" stroke="#8fb4ef" stroke-width="2"/>
+<circle cx="847.4" cy="175" r="9" fill="#ec8a4f" opacity="0"><animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.06;0.3;1" dur="6s" begin="5s" repeatCount="indefinite"/></circle>
+<text x="830" y="160" text-anchor="end" class="mono num">06</text>
+<text x="830" y="178" text-anchor="end" class="sans lab">Coexisting</text>
+<text x="830" y="193" text-anchor="end" class="mono sub">one relationship at a time</text>
+</g>
+
+<!-- travelling token -->
+<circle r="6.5" fill="#ec8a4f" stroke="#0e1116" stroke-width="2.5">
+<animateMotion dur="6s" repeatCount="indefinite"><mpath href="#orbit"/></animateMotion>
+</circle>
+<text x="1216" y="452" text-anchor="end" class="mono" font-size="10.5" fill="#5f656c" letter-spacing="1">LITTLEA.AI · SINGAPORE</text>
+</svg>
