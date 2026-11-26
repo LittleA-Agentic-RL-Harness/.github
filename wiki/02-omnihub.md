@@ -29,7 +29,6 @@ Both disclosure and stop-request handling are audited on the full log, with a 10
 
 ~~~mermaid
 stateDiagram-v2
-    direction LR
     [*] --> Intent: typed action with its ID
     Intent --> Attempt: gate passed
     Intent --> Refused: gate refused
